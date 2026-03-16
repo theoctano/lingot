@@ -1,0 +1,17 @@
+[package]
+name = "lingot"
+version = "1.0.0"
+authors = ["Théo Huchard <theo.huchard@protonmail.com>"]
+edition = "2021"
+description = "A concise, safe, and readable scripting language"
+license = "MIT"
+repository = "https://github.com/theoctano/lingot"
+homepage = "https://github.com/theoctano/lingot"
+readme = "README.md"
+keywords = ["scripting", "language", "automation", "shell", "interpreter"]
+categories = ["command-line-utilities", "development-tools"]
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+glob = "0.3"
+colored = "2"

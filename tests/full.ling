@@ -1,0 +1,75 @@
+// === Variables ===
+let name = "Théo"
+let dyn count = 0
+
+// === String interpolation ===
+display("Hello {name}!")
+
+// === Functions ===
+let greet (who) {
+  return "Hello {who}"
+}
+
+// === Loop with repeat for ===
+let names = ["Alice", "Bob", "Charlie"]
+repeat {
+  display(greet(n))
+  count = count + 1
+} for (n in names)
+
+display("Greeted {count} people")
+
+// === If/else ===
+if (count > 2) {
+  display("That's a lot of people!")
+} else {
+  display("Not that many")
+}
+
+// === While ===
+let dyn x = 3
+while (x > 0) {
+  display("{x}...")
+  x = x - 1
+}
+
+// === Math ===
+let divide (a, b) {
+  if (b == 0) {
+    fail "Division by zero"
+  }
+  return a / b
+}
+
+display("10 / 3 = {divide(10, 3)}")
+display("7 / 2 = {7 / 2}")
+display("7.0 / 2 = {7.0 / 2}")
+
+// === Try/catch ===
+try {
+  let r = divide(10, 0)
+  display(r)
+} catch (error) {
+  display("Caught: {error}")
+}
+
+// === Shell ===
+try {
+  let whoami = shell("whoami")
+  display("User: {whoami}")
+} catch (error) {
+  display("Shell failed: {error}")
+}
+
+// === File operations ===
+write("Hello from Lingot!").to("/tmp/lingot_test.txt")
+let content = read("/tmp/lingot_test.txt")
+display("File content: {content}")
+delete("/tmp/lingot_test.txt")
+display("File cleaned up")
+
+// === List directory ===
+let files = list("/tmp")
+display("Files in /tmp: {files}")
+
+display("All tests passed!")
