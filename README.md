@@ -1,5 +1,7 @@
 # Lingot
 
+ [![crates.io](https://img.shields.io/crates/v/lingot.svg)](https://crates.io/crates/lingot)
+
 A concise, safe, and readable scripting language built with Rust.
 
 Lingot is designed to be easy to learn for non-programmers while remaining powerful for experienced developers. It features type inference, string interpolation, built-in file operations, shell interop, and a minimal keyword set — all compiled to a fast native binary.
