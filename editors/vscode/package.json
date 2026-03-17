@@ -1,0 +1,35 @@
+{
+  "name": "lingot",
+  "displayName": "Lingot",
+  "description": "Syntax highlighting for the Lingot programming language",
+  "version": "0.1.0",
+  "publisher": "theoctano",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/theoctano/lingot"
+  },
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "lingot",
+        "aliases": ["Lingot", "lingot"],
+        "extensions": [".ling"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "lingot",
+        "scopeName": "source.lingot",
+        "path": "./syntaxes/lingot.tmLanguage.json"
+      }
+    ]
+  }
+}
